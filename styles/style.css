@@ -8,7 +8,7 @@ nav{
     justify-content: space-between;
     padding: 10px;
 }
-section{
+nav .menu-navegacion{
     display: flex;
     gap: 50px;
     padding-right: 50px;
@@ -23,21 +23,26 @@ main{
     margin: 50px;
     gap: 100px;
 }
-.text1 p{
+.texto-principal p{
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
 }
-.text1{
+.texto-principal{
     align-content: center;
     justify-content: center;
     max-width: 400px;   
 }
-.text1 h1{
+.imagen-principal img{
+    width: 700px;
+    height: 550px;
+    margin: 50px;
+}
+.texto-principal h1{
     font-size: 70px;
     font-family: "Bebas Neue", sans-serif;
     font-weight: lighter;
 }
-.text1 button{
+.texto-principal button{
     background-color: #f5cb00;
     border: none;
     padding-right: 4%;
@@ -50,7 +55,7 @@ main{
 header{
     margin-bottom: 300px;
 }
-.text2{
+.seccion-estadisticas{
     position: absolute;
     display: flex;
     background-color: #e6e6e6;
@@ -61,58 +66,54 @@ header{
     align-content: center;
     box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.459);
 }
-.a{
+.contenido-derecha{
     max-width: 30%;
 }
-.a h1{
+.contenido-derecha h1{
     color: #f5cb00;
     font-size: 70px;
     font-family: "Bebas Neue", sans-serif;
 }
-.a p{
+.contenido-derecha p{
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
 }
-.a button{
+.contenido-derecha button{
     border: none;
     background-color: #e6e6e600;
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
     font-weight: bold;
 }
-.b{
+.graficos-izquierda{
     display: flex;
-    width: 50%;
 }
-.b img {
- width: 70%;
- height: 70%;
-}
-aside{
+.seccion-ayuda{
     padding-top: 300px;
     display: flex;
     flex-direction: column;
     background-color: #f5cb00;
     padding-bottom: 100px;
 }
-aside h1{
-    margin-left: 14%;
+.seccion-ayuda h1{
+    padding-left: 200px;
     font-size: 70px;
     font-family: "Bebas Neue", sans-serif;
 }
-.text3{
+.contenedor-cajas{
     display: flex;
     justify-content: space-evenly;
 }
-.c{
+.caja-texto{
     max-width: 20%;
     font-size: 20px;
 }
-.c p{
+.caja-texto p{
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
+    margin-right: 50px;
 }
-.c button{
+.caja-texto button{
     font-size: 20px;
     padding-right: 40px;
     padding-left: 40px;
@@ -122,22 +123,22 @@ aside h1{
     border: none;
     color: white;
 }
-.aside2{
+.seccion-porcentaje{
     display: flex;
     margin: 100px;
     background-color: #e6e6e6;
     box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.459);
 }
-.info2 h1{
+.info-grafico h1{
     color: #f5cb00;
     font-size: 70px;
     font-family: "Bebas Neue", sans-serif;
 }
-.info2 p{
+.info-grafico p{
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
 }
-.info2 button{
+.info-grafico button{
     font-size: 20px;
     padding-right: 4%;
     padding-left: 4%;
@@ -147,18 +148,18 @@ aside h1{
     border: none;
     color: white;
 }
-.info{
+.contenedor-grafico{
     padding: 50px;
 }
-.img{
+.imagen-grafico-derecha{
     display: flex;
     justify-content: end;
-    margin-top: 50px;
+    margin-top: 20px;
 }
-.img img{
-    width: 50%;
+.imagen-grafico-derecha img{
+    width: 30%;
 }
-.aside3{
+.seccion-sobre-nosotros{
     background-color: black;
     color: white;
     display: flex;
@@ -168,17 +169,17 @@ aside h1{
     text-align: center;
     padding: 50px;
 }
-.aside3 h1{
+.seccion-sobre-nosotros h1{
     color: #f5cb00;
     font-family: "Bebas Neue", sans-serif;
     font-size: 70px;
 }
-.aside3 p{
+.seccion-sobre-nosotros p{
     max-width: 50%;
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
 }
-.aside3 button{
+.seccion-sobre-nosotros button{
     margin-top: 50px;
     font-size: 20px;
     padding-right: 4%;
@@ -189,25 +190,25 @@ aside h1{
     border: none;
     color: rgb(0, 0, 0);
 }
-.aside4{
+.seccion-equipo{
     display: flex;
     gap: 50px;
     justify-content: center;
     margin: 100px;
 }
-.team{
+.info-equipo{
     align-content: center;
     max-width: 20%;
 }
-.team p{
+.info-equipo p{
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
 }
-.team h1{
+.info-equipo h1{
     font-family: "Bebas Neue", sans-serif;
     font-size: 70px;
 }
-.team button{
+.info-equipo button{
     font-size: 20px;
     padding-right: 40px;
     padding-left: 40px;
@@ -217,25 +218,25 @@ aside h1{
     border: none;
     color: rgb(0, 0, 0);
 }
-.aside5{
+.seccion-metodo{
     display: flex;
     justify-content: space-evenly;
     background-color: #e6e6e6;
     align-items: center;
     padding: 50px;
 }
-.method{
+.contenido-metodo{
     max-width: 30%;
 }
-.method p{
+.contenido-metodo p{
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
 }
-.method h1{
+.contenido-metodo h1{
     font-size: 70px;
     font-family: "Bebas Neue", sans-serif;
 }
-.method button{
+.contenido-metodo button{
     font-size: 20px;
     padding-right: 40px;
     padding-left: 40px;
@@ -245,28 +246,27 @@ aside h1{
     border: none;
     color: rgb(0, 0, 0);
 }
-.aside6{
+.seccion-contacto-newsletter{
     display: flex;
     justify-content: space-evenly;
     margin: 100px;
 }
-.document .div1{
+.formulario-contacto .div1{
     display: flex;
     gap: 20px;
     justify-content: space-between;
-    
 }
 .div1, .div2, .div3 p{
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
 }
-.document{
+.formulario-contacto{
     background-color: black;
     color: white;
     padding: 50px;
     max-width: 30%;
 }
-.document input{
+.formulario-contacto input{
     background-color: rgba(255, 255, 255, 0);
     border: 1px solid white;
 }
@@ -279,20 +279,20 @@ aside h1{
     display: flex;
     flex-direction: column;
 }
-.letter{
+.newsletter{
     align-content: center;
     max-width: 20%;
 }
-.letter p{
+.newsletter p{
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
 }
-.letter h1{
+.newsletter h1{
     color: #f5cb00;
     font-size: 70px;
     font-family: "Bebas Neue", sans-serif;
 }
-.letter button{
+.newsletter button{
     font-size: 20px;
     padding-right: 40px;
     padding-left: 40px;
@@ -308,7 +308,7 @@ input#name{
 input#mensaje{
     height: 200px;
 }
-.aside7{
+.seccion-contacto{
     background-color: #f5cb00;
     color: rgb(0, 0, 0);
     display: flex;
@@ -318,15 +318,15 @@ input#mensaje{
     text-align: center;
     padding: 50px;
 }
-.aside7 p{
+.seccion-contacto p{
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
 }
-.aside7 h1{
+.seccion-contacto h1{
     font-family: "Bebas Neue", sans-serif;
     font-size: 70px;
 }
-.aside7 button{
+.seccion-contacto button{
     font-size: 20px;
     margin-top: 50px;
     padding-right: 4%;
@@ -344,7 +344,7 @@ footer{
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
 }
-.footer1{
+.enlaces-pie{
     display: flex;
     text-decoration: none;
     list-style: none;
@@ -352,24 +352,27 @@ footer{
     margin-top: 50px;
     margin-bottom: 100px;
 }
-.foot3{
+.pie-derechos{
     display: flex;
     border-top: 1px solid #f5cb00;
     justify-content: space-between;
 }
-.foot4{
+.redes-sociales{
     align-content: center;
 }
+
 @media (max-width: 480px) {
-    nav, text{
+    nav, .menu-navegacion{
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     }
+    nav
     nav img{
         padding: 0;
     }
-    nav text{
+    .menu-navegacion{
         padding: 0;
     }
     main{
@@ -377,10 +380,10 @@ footer{
         flex-wrap: wrap;
         padding-bottom: 50%;
     }
-    mainimg img{
+    .imagen-principal img{
         width: 400px;
     }
-    position{
+    .seccion-estadisticas{
         top: 1100px;
         display: flex;
         flex-wrap: wrap;
@@ -390,412 +393,373 @@ footer{
         margin-right: 20px;
         flex-direction: column;
     }
-    right{
+    .contenido-derecha{
         max-width: 500px;
     }
-    left img{
+    .graficos-izquierda img{
         width: 50%;
         height: 100%;
     }
-    boxing{
+    .contenedor-cajas{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    box{
+    .caja-texto{
         max-width: 400px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-bottom: 50px;
     }
-    box button{
+    .caja-texto button{
         max-width: 200px;
         align-self: center;
     }
-    aside h1{
+    .seccion-ayuda h1{
         text-align: center;
         margin: 0;
         padding: 0;
     }
-    aside{
+    .seccion-ayuda{
         padding-top: 120%;
     }
-    zok img{ 
+    .imagen-ayuda img{ 
         width: 400px;
     }
-    aside2{
+    .seccion-porcentaje{
         display: flex;
         flex-direction: column;
         margin: 50px;
     }
-    .aside3{
+    .seccion-sobre-nosotros{
         max-width: 500px;
     }
-    .aside3 img{
+    .seccion-sobre-nosotros img{
         width: 400px;
     }
-    graphi img{
+    .imagen-grafico img{
         width: 100%;
     }
-    .aside4 img{
+    .seccion-equipo img{
         width: 400px;
         height: 400px;
     }
-    .aside4{
+    .seccion-equipo{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    team{
+    .info-equipo{
         max-width: 100%;
     }
-    .aside5 img{
+    .seccion-metodo img{
         width: 400px;
     }
-    .aside5{
+    .seccion-metodo{
         display: flex;
         flex-direction: column;
     }
-    .method{
+    .contenido-metodo{
         margin-bottom: 100px;
         max-width: 500px;
     }
-    .aside7 img{
+    .seccion-contacto img{
         width: 400px;
     }
-    .document{
+    .formulario-contacto{
         max-width: 400px;
     }
     .div1 input{
         width: 150px;
     }
-    .aside6{
+    .seccion-contacto-newsletter{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .letter{
+    .newsletter{
         max-width: 500px;
     }
 }
-
-
 @media (min-width: 481px) and (max-width: 768px) {
-    nav, text{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    nav, .menu-navegacion{ 
+        flex-direction: column; 
+        align-items: center; 
     }
-    nav img{
-        padding: 0;
+    nav img, .menu-navegacion{ 
+        padding: 0; 
     }
-    nav text{
-        padding: 0;
-    }
-    main{
-        display: flex;
+    main{ 
         flex-wrap: wrap;
-        padding-bottom: 50%;
+        padding-bottom: 50%; 
     }
-    mainimg img{
-        width: 400px;
+    .imagen-principal img{ 
+        width: 400px; 
     }
-    position{
-        top: 1100px;
-        display: flex;
+    .seccion-estadisticas{ 
+        top: 1100px; 
         flex-wrap: wrap;
-        margin-top: 80%;
-        display: flex;
-        margin-left: 20px;
+         margin-top: 80%;
+        margin-left: 20px; 
         margin-right: 20px;
-        flex-direction: column;
-    }
-    right{
+         flex-direction: column; 
+        }
+    .contenido-derecha{ 
         max-width: 500px;
-    }
-    left img{
-        width: 50%;
-        height: 100%;
-    }
-    boxing{
-        display: flex;
+        }
+    .graficos-izquierda img{
+         width: 50%; 
+         height: 100%; 
+        }
+    .contenedor-cajas{ 
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    box{
-        max-width: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+         align-items: center;
+         }
+    .caja-texto{ 
+        max-width: 400px; 
         margin-bottom: 50px;
-    }
-    box button{
-        max-width: 200px;
-        align-self: center;
-    }
-    aside h1{
+        }
+    .caja-texto button{
+         max-width: 200px;
+         align-self: center; 
+        }
+    .seccion-ayuda h1{ 
         text-align: center;
-        margin: 0;
-        padding: 0;
+         margin: 0; 
+         padding: 0; 
+        }
+    .seccion-ayuda{ 
+        padding-top: 120%; 
     }
-    aside{
-        padding-top: 120%;
+    .imagen-ayuda img{ 
+        width: 400px; 
     }
-    zok img{ 
-        width: 400px;
-    }
-    aside2{
-        display: flex;
+    .seccion-porcentaje{ 
         flex-direction: column;
-        margin: 50px;
+         margin: 50px; 
+        }
+    .seccion-sobre-nosotros{ 
+        max-width: 600px; 
     }
-    .aside3{
-        max-width: 500px;
+    .seccion-sobre-nosotros img{ 
+        width: 400px; 
     }
-    .aside3 img{
-        width: 400px;
+    .imagen-grafico img{ 
+        width: 100%; 
     }
-    graphi img{
-        width: 100%;
+    .seccion-equipo img{ 
+        width: 400px; 
+        height: 400px; 
     }
-    .aside4 img{
-        width: 400px;
-        height: 400px;
-    }
-    .aside4{
-        display: flex;
+    .seccion-equipo{ 
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+         align-items: center; 
+        }
+    .info-equipo{ 
+        max-width: 100%; 
     }
-    team{
-        max-width: 100%;
+    .seccion-metodo img{ 
+        width: 400px; 
     }
-    .aside5 img{
-        width: 400px;
+    .seccion-metodo{ 
+        flex-direction: column; 
     }
-    .aside5{
-        display: flex;
-        flex-direction: column;
-    }
-    .method{
+    .contenido-metodo{ 
         margin-bottom: 100px;
-        max-width: 500px;
+         max-width: 500px; 
+        }
+    .seccion-contacto img{ 
+        width: 400px; 
     }
-    .aside7 img{
-        width: 400px;
+    .formulario-contacto{ 
+        max-width: 400px; 
     }
-    .document{
-        max-width: 400px;
+    .div1 input{ 
+        width: 150px; 
     }
-    .div1 input{
-        width: 150px;
-    }
-    .aside6{
-        display: flex;
+    .seccion-contacto-newsletter{ 
         flex-direction: column;
-        align-items: center;
+         align-items: center; 
     }
-    .letter{
-        max-width: 500px;
+    .newsletter{ 
+        max-width: 500px; 
     }
 }
 
 @media (min-width: 769px) and (max-width: 920px) {
-    main{
-        display: flex;
-        flex-wrap: wrap;
-        padding-bottom: 40%;
+    main{ 
+        flex-wrap: wrap; 
+        padding-bottom: 40%; 
     }
-    mainimg img{
-        width: 700px;
+    .imagen-principal img{ 
+        width: 700px; 
     }
-    position{
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 80%;
-        display: flex;
+    .seccion-estadisticas{ 
+        flex-wrap: wrap; 
+        margin-top: 80%; 
+        flex-direction: column; 
+    }
+    .contenido-derecha{ 
+        max-width: 500px; 
+    }
+    .graficos-izquierda img{ 
+        width: 50%; 
+        height: 100%; 
+    }
+    .contenedor-cajas{ 
         flex-direction: column;
+         align-items: center; 
     }
-    right{
-        max-width: 500px;
+    .caja-texto{ 
+        max-width: 500px; 
+        margin-bottom: 50px; 
     }
-    left img{
-        width: 50%;
-        height: 100%;
+    .caja-texto button{ 
+        max-width: 200px; 
+        align-self: center; 
     }
-    boxing{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .seccion-ayuda h1{ 
+        text-align: center; 
+        margin: 0; 
+        padding: 0; 
     }
-    box{
-        max-width: 500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 50px;
+    .seccion-ayuda{ 
+        padding-top: 50%; 
     }
-    box button{
-        max-width: 200px;
-        align-self: center;
+    .imagen-ayuda img{ 
+        width: 500px; 
     }
-    aside h1{
-        text-align: center;
-        margin: 0;
-        padding: 0;
+    .seccion-porcentaje{ 
+        flex-wrap: wrap; 
     }
-    aside{
-        padding-top: 50%;
+    .seccion-sobre-nosotros img{ 
+        width: 700px; 
     }
-    zok img{ 
-        width: 500px;
+    .imagen-grafico img{ 
+        width: 100%; 
     }
-    aside2{
-        display: flex;
-        flex-wrap: wrap;
+    .seccion-equipo img{ 
+        width: 400px; 
+        height: 400px; 
     }
-    .aside3 img{
-        width: 700px;
+    .seccion-equipo{ 
+        flex-direction: column; 
+        align-items: center; 
     }
-    graphi img{
-        width: 100%;
+    .info-equipo{ 
+        max-width: 40%; 
     }
-    .aside4 img{
-        width: 400px;
-        height: 400px;
+    .seccion-metodo img{ 
+        width: 500px; 
     }
-    .aside4{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .seccion-metodo{ 
+        flex-direction: column; 
     }
-    .team{
-        max-width: 40%;
+    .contenido-metodo{ 
+        margin-bottom: 100px; 
     }
-    .aside5 img{
-        width: 500px;
+    .seccion-contacto img{ 
+        width: 700px; 
     }
-    .aside5{
-        display: flex;
-        flex-direction: column;
+    .formulario-contacto{ 
+        max-width: 500px; 
     }
-    .method{
-        margin-bottom: 100px;
+    .seccion-contacto-newsletter{ 
+        flex-direction: column; 
+        align-items: center; 
     }
-    .aside7 img{
-        width: 700px;
-    }
-    .document{
-        max-width: 500px;
-    }
-    .aside6{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .letter{
-        max-width: 500px;
+    .newsletter{ 
+        max-width: 500px; 
     }
 }
-
 
 @media (min-width: 921px) and (max-width: 1279px) {
-    main{
-        display: flex;
-        flex-wrap: wrap;
-        padding-bottom: 40%;
+    main{ 
+        flex-wrap: wrap; 
+        padding-bottom: 40%; 
     }
-    mainimg img{
-        width: 700px;
+    .imagen-principal img{ 
+        width: 700px; 
     }
-    position{
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 80%;
-        display: flex;
-        flex-direction: column;
+    .seccion-estadisticas{ 
+        flex-wrap: wrap; 
+        margin-top: 80%; 
+        flex-direction: column; 
     }
-    right{
-        max-width: 500px;
+    .contenido-derecha{ 
+        max-width: 500px; 
     }
-    left img{
-        width: 50%;
-        height: 100%;
+    .graficos-izquierda img{ 
+        width: 50%; 
+        height: 100%; 
     }
-    aside{
-        padding-top: 50%;
+    .seccion-ayuda{ 
+        padding-top: 50%; 
     }
-    aside h1{
-        margin-left: 80px;
+    .seccion-ayuda h1{ 
+        margin-left: 80px; 
     }
-    zok img{ 
-        width: 500px;
+    .imagen-ayuda img{ 
+        width: 500px; 
     }
-    aside2{
-        display: flex;
-        flex-wrap: wrap;
+    .seccion-porcentaje{ 
+        flex-wrap: wrap; 
     }
-    .aside3 img{
-        width: 700px;
+    .seccion-sobre-nosotros img{ 
+        width: 700px; 
     }
-    graphi img{
-        width: 720px;
+    .imagen-grafico img{ 
+        width: 720px; 
     }
-    .aside4 img{
-        width: 400px;
-        height: 400px;
+    .seccion-equipo img{ 
+        width: 400px; 
+        height: 400px; 
     }
-    team{
-        max-width: 40%;
+    .info-equipo{ 
+        max-width: 40%; 
     }
-    aside5 img{
-        width: 500px;
+    .seccion-metodo img{ 
+        width: 500px; 
     }
-    .aside7 img{
-        width: 700px;
+    .seccion-contacto img{ 
+        width: 700px; 
     }
-    .document{
-        max-width: 500px;
+    .formulario-contacto{ 
+        max-width: 500px; 
     }
-    .aside6{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .seccion-contacto-newsletter{ 
+        flex-direction: column; 
+        align-items: center; 
     }
-    .letter{
-        max-width: 500px;
+    .newsletter{ 
+        max-width: 500px; 
     }
 }
 
-
 @media (min-width: 1280px) {
-    mainimg img{
+    .imagen-principal img{
         width: 600px;
         height: 450px;
     }
     main{
         padding-bottom: 200px;
     }
-    left img{
+    .graficos-izquierda img{
         align-self: center;
         width: 50%;
         height: 50%;
         padding: 20px;
     }
-    aside h1{
+    .seccion-ayuda h1{
         margin-left: 7%;   
     }
-    .document{
+    .formulario-contacto{
         max-width: 520px;
     }
-    graphi2{
+    .contenedor-grafico{
         padding-bottom: 0;
     }
 }
